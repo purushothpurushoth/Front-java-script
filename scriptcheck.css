@@ -1,0 +1,291 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+.main-container {
+  margin: 0%;
+  height: 8%;
+  background-color: #2564cf;
+}
+
+.apps {
+  margin: 1%;
+  vertical-align: top;
+  display: inline-block;
+  color: aliceblue;
+  cursor: pointer;
+
+}
+
+.app-name {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1%;
+  margin-top: 1.2%;
+  font-size: 1.1em;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.search {
+  display: inline-block;
+  width: 60%;
+
+}
+
+.search-box {
+  margin-top: 1%;
+  margin-left: 35%;
+  vertical-align: top;
+  width: 55%;
+  height: 60%;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.search-text {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1%;
+  margin-left: 0%;
+  width: 90%;
+
+}
+
+.search-text input {
+  width: 80%;
+  outline: none;
+  border: none;
+
+}
+
+.setting {
+  margin-left: 14%;
+  margin-top: 1%;
+  display: inline-block;
+  color: aliceblue;
+  cursor: pointer;
+
+}
+
+.help {
+  vertical-align: top;
+  display: inline-block;
+  margin: 1%;
+  color: aliceblue;
+  cursor: pointer;
+
+}
+
+.new-icon {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1%;
+  margin-left: 9px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.account {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 1%;
+  vertical-align: top;
+  border-radius: 25px;
+  text-align: center;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.left-side {
+  margin: 0px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: white;
+  height: 91.3%;
+  width: 23%;
+  cursor: pointer;
+}
+
+
+.menu-button {
+  height: 5%;
+  padding: 10%;
+  padding-bottom: 5%;
+
+}
+
+.menu-button span {
+  background-color: white;
+  border-bottom: white;
+}
+
+.left-container {
+  height: 80%;
+  max-height: 80%;
+
+}
+
+.list-container {
+  margin: 0%;
+  padding: 0%;
+  max-height: 91%;
+  overflow-y: auto;
+}
+
+#list {
+  cursor: pointer;
+}
+
+.list:hover {
+  background-color: whitesmoke;
+}
+
+.icon {
+  display: inline-block;
+  padding: 5%;
+  padding-left: 8%;
+}
+
+.text {
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 6%;
+  vertical-align: top;
+}
+
+.insert-list {
+  margin-top: 1%;
+  height: 7%;
+}
+
+.insert-list .icon {
+  padding-left: 8%;
+  padding-right: 0%;
+  padding-top: 2%;
+}
+
+.insert-list .text {
+  height: 2%;
+  padding: 4%;
+  margin-top: 2%;
+  margin-left: 0%;
+  outline: none;
+  border: none;
+}
+
+.add-icon {
+  display: inline-block;
+  vertical-align: top;
+  padding: 3%;
+}
+
+.add-icon span {
+  font-size: 100%;
+}
+
+.icons {
+  margin: 0%;
+}
+
+.app-icon {
+  margin-top: 1%;
+  padding-left: 9.5%;
+  display: inline-block;
+}
+
+.middle-side {
+  display: inline-block;
+  vertical-align: top;
+  height: 91.5%;
+  width: 76.5%;
+  background-color: whitesmoke;
+}
+
+.middle-side-icon {
+
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 3%;
+  margin-left: 2%;
+  vertical-align: top;
+
+}
+
+.middle-side-text {
+  display: inline-block;
+  margin-top: 3%;
+  font-size: 140%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.date {
+  margin-top: 1%;
+  margin-left: 3%;
+  width: 30%;
+  height: 3%;
+  font-size: 75%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.task-container {
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 95%;
+  height: 8%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: white;
+}
+
+.radio-button {
+  display: inline-block;
+  margin: 1%;
+}
+
+.input {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0%;
+  padding: 0%;
+  width: 70%;
+  margin-top: 1%;
+}
+
+#taskadding {
+  border: none;
+  outline: none;
+}
+
+.add-container {
+  margin-top: 0%;
+  margin-left: 2%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 95%;
+  height: 8%;
+  background-color: rgb(243, 243, 243);
+}
+
+.task-icon {
+  display: inline-block;
+  margin: 1%;
+}
+
+.task-icon span {
+  font-size: 16px;
+}
+
+.text-container{
+  margin-top:4%;
+  margin-left:2%;
+  width: 95%;
+  height: 8%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: white;
+}

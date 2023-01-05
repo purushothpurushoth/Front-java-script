@@ -1,0 +1,80 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="scriptcheck.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://kit.fontawesome.com/5fe8a52946.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="apps">
+      <span class="material-symbols-outlined"> apps</span>
+    </div>
+    <div class="app-name">
+      <a herf="ToDo">To Do</a>
+    </div>
+    <div class="search">
+      <div class="search-box">
+        <span class="material-symbols-outlined">search</span>
+        <div class="search-text"><input type="text"></div>
+      </div>
+    </div>
+    <div class="setting"><span class="material-symbols-outlined">settings</span></div>
+    <div class="help"><span class="material-symbols-outlined">question_mark</span></div>
+    <div class="new-icon"><span class="material-symbols-outlined">campaign</span></div>
+    <div class="account"></div>
+  </div>
+  <div class="left-side">
+    <div class="menu-button" id="menu-button"><span class="material-symbols-outlined">menu</span></div>
+    <div class="display" id="display">
+      <div class="left-container" id="left-container">
+        <div class="list-container" id="list-container"></div>
+        <div class="insert-list">
+          <div class="icon"><span class="material-symbols-outlined">add</span></div>
+          <input class="text" id="text" type="text" placeholder="New list">
+          <div class="add-icon">
+            <span class="material-symbols-outlined">person_add</span>
+          </div>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="app-icon"><span class="material-symbols-outlined">mail</span></div>
+        <div class="app-icon"><span class="material-symbols-outlined">calendar_month</span></div>
+        <div class="app-icon"><span class="material-symbols-outlined">group</span></div>
+        <div class="app-icon"><span class="material-symbols-outlined">attach_file</span></div>
+        <div class="app-icon"><span class="material-symbols-outlined">check</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="middle-side">
+    <div class="container">
+      <div class="middle-side-icon" id="middle-side-icon">
+        <span class="material-symbols-outlined">sunny</span>
+      </div>
+      <div class="middle-side-text" id="middle-side-text">My day</div>
+    </div>
+    <div class="date">
+      <span id="date"></span>
+    </div>
+    <div class="task-container">
+      <div class="radio-button"><span class="material-symbols-outlined">radio_button_unchecked</span></div>
+      <div class="input"><input type="text" id="taskadding" placeholder="Add a task"></div>
+    </div>
+    <div class="add-container">
+      <div class="task-icon"><span class="material-symbols-outlined">calendar_month</span></div>
+      <div class="task-icon"><span class="material-symbols-outlined">notifications</span></div>
+      <div class="task-icon"><span class="material-symbols-outlined">cached</span></div>
+    </div>
+    <div class="text-container">  
+
+    </div>
+
+  </div>
+  <script src="scriptcheck.js"></script>
+</body>
+
+</html>
