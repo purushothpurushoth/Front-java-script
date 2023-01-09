@@ -9,9 +9,11 @@ body {
   height: 8%;
   background-color: #2564cf;
 }
-.hidden-left-side{
-  display:none;
+
+.hidden-left-side {
+  display: none;
 }
+
 .apps {
   margin: 1%;
   vertical-align: top;
@@ -104,7 +106,7 @@ body {
 
 .left-side {
   margin: 0px;
-  display:inline-block;
+  display: inline-block;
   vertical-align: top;
   background-color: white;
   height: 91.3%;
@@ -199,19 +201,22 @@ body {
   display: inline-block;
 }
 
-.show-middle-side{
+.show-middle-side {
   display: inline-block;
   vertical-align: top;
   height: 91.5%;
   width: 99.5%;
   background-color: whitesmoke;
+  cursor: pointer;
 }
+
 .middle-side {
   display: inline-block;
   vertical-align: top;
   height: 91.5%;
-  width: 76.5%;
+  width: 49.5%;
   background-color: whitesmoke;
+  cursor: pointer;
 }
 
 .middle-side-icon {
@@ -319,4 +324,150 @@ body {
   display: inline-block;
   vertical-align: top;
   margin-top: 1.1%;
+}
+
+.right-side {
+  display: inline-block;
+  border: 1px solid black;
+  margin: 0%;
+  height: 91%;
+  width: 26.6%;
+}
+
+.inner-div {
+  border: 1px solid black;
+  margin: 2%;
+  margin-right: 0%;
+  margin-top: 4%;
+  height: 88%;
+
+}
+
+.right-side-container {
+  border: 1px solid black;
+  margin: 5%;
+  margin-bottom: 0%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  height: 10%;
+
+}
+
+.right-side-container .radio-button {
+  padding: 2%;
+  padding-right: 0%;
+}
+
+.right-text {
+  display: inline-block;
+  margin-top: 2%;
+  width: 60%;
+  vertical-align: top;
+  padding: 4%;
+}
+
+.star {
+  display: inline-block;
+  margin-left: 3%;
+  vertical-align: top;
+  padding-top: 2%;
+}
+
+.add-step {
+  margin: 0%;
+  border: 1px solid black;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-top: 0%;
+  height: 10%;
+  width: 94.5%;
+}
+
+.add {
+  display: inline-block;
+  padding-top: 3%;
+  padding-left: 3%;
+}
+
+.step-text {
+  display: inline-block;
+  vertical-align: top;
+  height: 60%;
+  margin-top: 4.5%;
+  vertical-align: top;
+  padding: 0%;
+}
+
+.right-task {
+  border: 1px solid black;
+  height: 11%;
+  width: 94.5%;
+  margin-top: 5%;
+}
+
+.symbol {
+  padding: 3%;
+  display: inline-block;
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll {
+  border: 1px solid black;
+  margin: 5%;
+  margin-top: 0%;
+  margin-right: 0%;
+  height: 86%;
+  overflow-y: auto;
+  scrollbar-width: 20%;
+}
+
+.added-to-my-day {
+  display: inline-block;
+  vertical-align: top;
+  padding: 4%;
+  padding-left: 0%;
+}
+
+.right-small-container {
+  border: 1px solid black;
+  margin-top: 3%;
+  height: 38%;
+  width: 94.5%;
+}
+
+.remind-me {
+  height: 32%;
+}
+
+.remind-me-icon {
+  padding: 3%;
+  display: inline-block;
+}
+
+.category {
+  border: 1px solid black;
+  margin-top: 2.5%;
+  height: 10%;
+  width: 94.5%;
+}
+
+.add-note {
+  border: 1px solid black;
+  margin-top: 2.5%;
+  margin-bottom: 5%;
+  height: 15%;
+  width: 94.5%;
+}
+
+.exist-button {
+  border: 1px solid black;
+  height: 5%;
+  margin: 5%;
+}
+
+.exist-icon {
+  di
 }

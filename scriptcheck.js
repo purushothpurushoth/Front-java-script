@@ -3,7 +3,8 @@ var middlecontainer = document.getElementById("addtask-container");
 var middleIcon = document.getElementById("middle-side-icon");
 var middleText = document.getElementById("middle-side-text");
 var middleDate = document.getElementById("date");
-var taskId=0;
+var icon = "";
+var taskId = 0;
 console.log(middleDate);
 var count = 0;
 var list = [
@@ -23,7 +24,8 @@ function init() {
   date();
   catergoryfunction();
   addtask();
-   menu();
+  menu();
+  showdisplay();
 }
 
 function date() {
@@ -53,18 +55,18 @@ function renderfunction() {
 
 function catergoryfunction() {
   for (var i = 0; i < tasks.length; i++) {
-    if(selectedcategory.id==tasks[i].catId){
-    var taskcontainer = document.createElement('div');
-    taskcontainer.classList.add("text-container");
-    var radiobutton = document.createElement('div');
-    radiobutton.classList.add("radio-button");
-    var taskheading = document.createElement('div');
-    taskheading.classList.add("tasks-heading");
-    radiobutton.innerHTML = tasks[i].name;
-    taskheading.innerHTML = tasks[i].icon;
-    taskcontainer.appendChild(taskheading);
-    taskcontainer.appendChild(radiobutton);
-    middlecontainer.appendChild(taskcontainer);
+    if (selectedcategory.id == tasks[i].catId) {
+      var taskcontainer = document.createElement('div');
+      taskcontainer.classList.add("text-container");
+      var radiobutton = document.createElement('div');
+      radiobutton.classList.add("radio-button");
+      var taskheading = document.createElement('div');
+      taskheading.classList.add("tasks-heading");
+      radiobutton.innerHTML = tasks[i].name;
+      taskheading.innerHTML = tasks[i].icon;
+      taskcontainer.appendChild(taskheading);
+      taskcontainer.appendChild(radiobutton);
+      middlecontainer.appendChild(taskcontainer);
     }
   }
 }
@@ -75,6 +77,7 @@ function selectcategory() {
   for (let i = 0; i < list.length; i++) {
     if (id == list[i].id) {
       middleIcon.innerHTML = list[i].icon;
+      icon = list[i].icon;
       middleText.innerHTML = list[i].text;
       selectedcategory = list[i];
       middlecontainer.innerHTML = "";
@@ -109,28 +112,34 @@ function addingtask() {
     let name = text.value;
     var middlecontainer = document.getElementById("addtask-container");
     middlecontainer.innerHTML = "";
-    tasks.push({catId:selectedcategory.id ,name: name,icon:'<span class="material-symbols-outlined">radio_button_unchecked</span>',id:taskId++});
+    tasks.push({ catId: selectedcategory.id, name: name, icon: '<span class="material-symbols-outlined">radio_button_unchecked</span>', id: taskId++ });
     catergoryfunction();
   }
 }
 
-function menu(){
-  document.getElementById("menu-button").addEventListener("click",menubutton);
+function menu() {
+  document.getElementById("menu-button").addEventListener("click", menubutton);
 }
-function menubutton(){
-      var display = document.getElementById("left-side");
-      middleIcon.innerHTML='<span class="material-symbols-outlined">menu</span>';
-      var middlesidecontainer=document.getElementById("middle-side");
-      middlesidecontainer.classList.remove("middle-side");
-      middlesidecontainer.classList.add("show-middle-side");
-      display.classList.remove("left-side");
-      display.classList.add("hidden-left-side");
+function menubutton() {
+  var display = document.getElementById("left-side");
+  middleIcon.innerHTML = '<span class="material-symbols-outlined">menu</span>';
+  var middlesidecontainer = document.getElementById("middle-side");
+  middlesidecontainer.classList.remove("middle-side");
+  middlesidecontainer.classList.add("show-middle-side");
+  display.classList.remove("left-side");
+  display.classList.add("hidden-left-side");
 }
-function showdisplay(){
-  document.getElementById().addEventListener("click",display);
+function showdisplay() {
+  document.getElementById("middle-side-icon").addEventListener("click", display);
 }
-function display(){
-
+function display() {
+  var display = document.getElementById("left-side");
+  var middlesidecontainer = document.getElementById("middle-side");
+  middleIcon.innerHTML = icon;
+  middlesidecontainer.classList.remove("show-middle-side");
+  middlesidecontainer.classList.add("middle-side");
+  display.classList.remove("hidden-left-side");
+  display.classList.add("left-side");
 }
 
 init();
